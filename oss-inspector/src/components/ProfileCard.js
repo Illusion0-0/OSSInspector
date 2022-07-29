@@ -1,11 +1,10 @@
 import React from "react";
-import { useLogout } from "../hooks/useLogout";
+// import { useLogout } from "../hooks/useLogout";
 
 const ProfileCard = ({ user }) => {
-  const { logout } = useLogout();
+  // const { logout } = useLogout();
   return (
     <>
-      console.log(user);
       <div className="profile-card">
         <img className="profile-img" src={user.photoURL} alt="" />
         <p>
@@ -21,9 +20,9 @@ const ProfileCard = ({ user }) => {
           User ID: <span>{user.uid}</span>
         </p>
       </div>
-      <button className="btny" onClick={logout}>
+      {/* <button className="btny" onClick={logout}>
         Log Out
-      </button>
+      </button> */}
     </>
   );
 };

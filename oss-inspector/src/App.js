@@ -9,7 +9,7 @@ import Repos from "./components/Repos";
 
 function App() {
   const { login, isPending } = useLogin();
-  // const { logout } = useLogout();
+  const { logout } = useLogout();
   const { user, authIsReady } = useContext(AuthContext);
   // console.log(user);
   
@@ -17,8 +17,13 @@ function App() {
     <div className="App">
       <Header />
       {user ? (
+        <div className="content">
         <ProfileCard user={user} />
-        // <Repos user={user} />
+        <Repos user={user} />
+        <button className="btny" onClick={logout}>
+        Log Out
+        </button>
+        </div>
       ) : (
         <button className="btny login-btn" onClick={login}>
           Login With Github

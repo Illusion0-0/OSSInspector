@@ -33,6 +33,15 @@
   justify-content: space-between;
 }
 
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0;
+}
+
 .btny {
   border: none;
   background-color: hsl(25, 97%, 53%);
@@ -82,4 +91,51 @@ span {
   color: white;
   font-size: 18px;
   font-weight: 400;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+h2{
+  text-align: center;
+  font-weight: 600;
+}
+.repos{
+  color:whitesmoke;
+  margin: 2% 0;
+}
+
+.break-inside{
+  width: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-center{
+    display: flex;
+    width: fit-content;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.vulnerable{
+margin-left: -55px;
+}
+
+.select{
+  margin: 0 5%;
+}
+
+.details{
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .details div {
+    display: none;
+  }
 }

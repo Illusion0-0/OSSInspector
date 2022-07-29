@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 import Repo from './Repo';
 
@@ -7,7 +7,7 @@ function Repos ({ user }) {
     const [isLoading, setIsLoading] = React.useState(false);
     const [error, setError] = React.useState(null);
     const [isEmpty, setIsEmpty] = React.useState(false);
-    const [isError, setIsError] = React.useState(false);
+    // const [isError, setIsError] = React.useState(false);
 
 
     React.useEffect(() => {
@@ -32,27 +32,26 @@ function Repos ({ user }) {
     }
         , [repos.length]);
 
-    React.useEffect(() => {
-        if (error) {
-            setIsError(true);
-        }
-    }
-    , [error]);
+    // React.useEffect(() => {
+    //     if (error) {
+    //         setIsError(true);
+    //     }
+    // }
+    // , [error]);
 
 
 
     return (
-        <div>
+        <div className='repos'>
+            <h2 >Repositories</h2>
             {isLoading && <p>Loading...</p>}
-            {isEmpty && <p>No repos found</p>}
-            {isError && <p>Error</p>}
-            {!isLoading && !isEmpty && !isError &&
+            {!isLoading && !isEmpty }
                 <div>
                     {repos.map(repo => (
                         <Repo key={repo.id} repo={repo} />
                     ))}
                 </div>
-            }
+            {/* } */}
         </div>
     );
 }
