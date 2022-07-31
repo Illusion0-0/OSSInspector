@@ -1,0 +1,29 @@
+.navbar {
+  padding: 0.5em 2em;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: $muted;
+    display: flex;
+    align-items: center;
+
+    @include dark {
+      color: $dheading;
+    }
+  }
+
+  .logo {
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    .icon {
+      margin-right: 0.5em;
+      color: $primary-1;
+
+      @include dark {
+        color: $dheading;
+      }
+    }
+  }
+}

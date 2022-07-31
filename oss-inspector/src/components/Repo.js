@@ -1,21 +1,14 @@
 import React from 'react';
 
-const Repo = ({ repo: { name, language, html_url, created_at, description } }) => {
-    return (
-        <React.Fragment>
-           <div className="pt-16 pb-16 mx-5 ">
+const Repo = ({ repo: { name, htmlUrl, description } }) => {
+  return (
+    <div className="pt-16 pb-16 mx-5 ">
       {/** container widgets */}
       <div className="box-border">
         <div className="break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4">
           <div className="items-center">
             <div>
-              <svg
-                width="74"
-                height="74"
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="74" height="74" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 2.3509e-05 32 2.3509e-05C49.6731 2.3509e-05 64 14.3269 64 32ZM6.13666 32C6.13666 46.284 17.7161 57.8634 32 57.8634C46.2839 57.8634 57.8633 46.284 57.8633 32C57.8633 17.7161 46.2839 6.13668 32 6.13668C17.7161 6.13668 6.13666 17.7161 6.13666 32Z"
                   fill="#3C3C3C"
@@ -25,27 +18,15 @@ const Repo = ({ repo: { name, language, html_url, created_at, description } }) =
                   fill="white"
                 />
               </svg>
-              <span className='vulnerable'>
-                32%
-              </span>
+              <span className="vulnerable">32%</span>
             </div>
-            <div className='details'>
-              <a href={html_url}>
-                {name}
-              </a>
-              <div>
-                {" "}
-                {description}{" "}
-              </div>
+            <div className="details">
+              <a href={htmlUrl}>{name}</a>
+              <div> {description} </div>
             </div>
           </div>
-          <span className='select'>
-            <svg
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <span className="select">
+            <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
                 fill="currentColor"
@@ -53,11 +34,8 @@ const Repo = ({ repo: { name, language, html_url, created_at, description } }) =
             </svg>
           </span>
         </div>
-        
       </div>
     </div>
-            
-        </React.Fragment>
-    )
-}
+  );
+};
 export default Repo;

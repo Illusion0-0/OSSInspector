@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font1;
+
+  @include dark {
+    color: $dtext;
+    background: $dsecondary-1;
+  }
+}
+
+.alert {
+  width: 100%;
+  text-align: left;
+  background: #eeeeee;
+  padding: 0.8em;
+  margin-bottom: 4em;
+
+  @include dark {
+    background: $dsecondary-2;
+  }
+
+  .highlight {
+    background: $secondary-1;
+    padding: 0.3em 0.5em;
+    border-radius: 2em;
+    margin-left: 0.3em;
+    font-weight: 500;
+
+    @include dark {
+      background: $dprimary-2;
+    }
+  }
+
+  .highlight:hover {
+    filter: brightness(0.8);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4em auto;
+
+  img {
+    @include dark {
+      filter: invert(0.5);
+    }
+  }
+}
+
+.success {
+  color: $green;
+}
+
+.warning {
+  color: $orange;
+}
+
+.danger {
+  color: $red;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.muted {
+  color: $muted;
+}
+
+.muted-light {
+  color: $dtext;
+}
+
+span.audit_text {
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &::before {
+    margin: 0 4px;
+    content: '\002014';
+  }
+}
+
+.loading {
+  width: 80%;
+  margin: 4em auto;
+  display: block;
+}
+
+div {
+  @include dark {
+    border-color: $dsecondary-2 !important;
+  }
+}
+
+.metric-wrapper {
+  @include dark {
+    border-color: $muted !important;
+  }
+}
+
+h1,
+h2,
+h3,
+span.header {
+  @include dark {
+    color: $dheading !important;
+  }
+}

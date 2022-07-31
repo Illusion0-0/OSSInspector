@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // import { useLogout } from "../hooks/useLogout";
 
 const ProfileCard = ({ user }) => {
