@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <Header />
       {/* <Inspect /> */}
       <SearchUser />
-      <Results />
+      <Results  />
       {/* {user ? (
         <div className="content">
           <ProfileCard user={user} />

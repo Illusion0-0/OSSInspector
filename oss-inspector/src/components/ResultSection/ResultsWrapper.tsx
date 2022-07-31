@@ -6,6 +6,7 @@ import ProgressBar from './ProgressBar';
 import LabResults from './LabResults';
 import Opportunuties from './Opportunities';
 import Diagnostics from './Diagnostics';
+//import Vulnerabilities from './Vulnerabilities';
 
 const ResultsWrapper: React.FC = () => {
   const result = useSelector(getResult);
@@ -34,6 +35,7 @@ const ResultsWrapper: React.FC = () => {
       <div className="wrapper">
         <LabResults />
         <Opportunuties />
+        {/* <Vulnerabilities/> */}
         <Diagnostics />
       </div>
     </div>
