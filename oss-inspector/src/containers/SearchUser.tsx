@@ -10,7 +10,7 @@ const SearchUser = () => {
   return (
     <div className="search-user">
       {!user?.login && <h2>Is the repository you are going to use safe?</h2>}
-      <Input />
+      <Input/>
     </div>
   );
 };

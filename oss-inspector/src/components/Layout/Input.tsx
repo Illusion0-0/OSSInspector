@@ -9,7 +9,6 @@ import { useContext } from 'react';
 const Input: React.FC = () => {
   const { setRepoName } = useContext(RatingContext);
   const dispatch = useDispatch();
-  const [gUrl, setUrl] = React.useState('');
   // const [username, setUsername] = React.useState('');
   // const [repoName, setRepoName] = React.useState('');
   //create function to extract username and repoName from input github url
@@ -20,7 +19,6 @@ const Input: React.FC = () => {
     if (!urlWithoutHttp.includes('github.com')) {
       return 'Please enter a valid github repo url';
     }
-
     const username = urlWithoutHttp.split('/')[1];
     return username;
 
