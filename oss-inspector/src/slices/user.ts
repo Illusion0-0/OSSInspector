@@ -28,6 +28,9 @@ const userSlice = createSlice({
     setRating: (state, { payload }: PayloadAction<ResultObject[]>) => {
       state.rating = payload;
     },
+    setRepoScore: (state, { payload }: PayloadAction<number>) => {
+      state.repoScore = payload;
+    },
     setError: (state, { payload }: PayloadAction<string>) => {
       state.user = null;
       state.repos = null;
@@ -38,5 +41,5 @@ const userSlice = createSlice({
   },
 });
 
-export const { getUser, getUserSuccess, setRating, setError } = userSlice.actions;
+export const { getUser, getUserSuccess, setRating, setRepoScore, setError } = userSlice.actions;
 export default userSlice.reducer;

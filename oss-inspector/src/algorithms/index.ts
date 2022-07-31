@@ -1,6 +1,7 @@
 import { Rating, Repository, ResultObject, User } from '../types';
 import finalizeResult from './finalizeResult';
-
+import { RatingContext } from '../contexts/RatingContext';
+import { useContext } from 'react';
 export class UserRating {
   // User Data & User Repositories (without forks)
   user: User;
@@ -25,6 +26,8 @@ export class UserRating {
     repoCount: 0,
     repoName: '',
     backlinkRating: 0,
+    repoIsSafe: false,
+    overAllScore: 0,
   };
 
   // Get all user data & repositories
@@ -79,20 +82,15 @@ export class UserRating {
   //create a function rateRepo which will take repo name and find it in the user's repos
   //if it exists, rate it and return the rating
   //if it doesn't exist, return 0
-  rateRepo(repoName: string) {
-    const repo = this.repos.find((r) => r.name === repoName);
+  rateRepo(): number {
+    // const { overAllScore,setRepoScore } = useContext(RatingContext);
+
+    const repo = this.repos.find((r) => r.name === this.rating.repoName);
+    let repoScore=0;
     if (repo) {
-    console.log(repo.stargazers_count + repo.forks_count);
-      const rate = repo.stargazers_count + repo.forks_count*1.2;
-
-      const res = parseInt((rate * 16).toFixed(0), 10);
-      this.rating.givenRepoPopularity = res >= 100 ? 100 : res;
-
+      repoScore = repo.stargazers_count + repo.forks_count + repo.watchers_count;
     }
-    
-    else this.rating.givenRepoPopularity = 0;
-
-    console.log(this.rating.repoName, this.rating.givenRepoPopularity);
+    return repoScore;
   }
 
 
@@ -144,7 +142,7 @@ export class UserRating {
     this.ratePopularity();
     this.rateRepoDescription();
     this.rateRepoPopularity();
-    this.rateRepo(this.rating.repoName);
+    // this.rateRepo();
     this.rateWebpage();
     this.rateBacklinks();
 

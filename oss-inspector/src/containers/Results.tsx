@@ -7,16 +7,22 @@ import NotFound from '../components/Layout/NotFound';
 import Alert from '../components/Layout/Alert';
 import Loading from '../components/Layout/Loading';
 
-const Results: React.FC = () => {
-  const { user, error, rating, loading } = useSelector(getStates);
 
+import { RatingContext } from '../contexts/RatingContext';
+import { useContext } from 'react';
+
+const Results: React.FC = () => {
+  const { repoName } = useContext(RatingContext);
+  const { user, error, rating, loading } = useSelector(getStates);
+  // console.log(user.htmlUrl);
   return (
     <section id="results">
       {user ? (
         <Alert>
           Results for user:{' '}
           <a href={user.htmlUrl} target="_blank" rel="noreferrer" className="highlight">
-            {user.login}
+            {user.login}/{repoName}
+            {/* {user.repoName} */}
           </a>{' '}
         </Alert>
       ) : (

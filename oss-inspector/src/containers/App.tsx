@@ -6,6 +6,7 @@ import SearchUser from './SearchUser';
 // import { useLogin } from '../hooks/useLogin';
 // import { useLogout } from '../hooks/useLogout';
 // import { AuthContext } from '../contexts/AuthContext';
+import { RatingContextProvider } from '../contexts/RatingContext';
 
 // import ProfileCard from '../components/ProfileCard';
 import Header from '../components/Header';
@@ -16,11 +17,12 @@ import '../styles/index.scss';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header />
-      {/* <Inspect /> */}
-      <SearchUser />
-      <Results />
-      {/* {user ? (
+      <RatingContextProvider>
+        <Header />
+        {/* <Inspect /> */}
+        <SearchUser />
+        <Results />
+        {/* {user ? (
         <div className="content">
           <ProfileCard user={user} />
           <Repos user={user} />
@@ -33,7 +35,8 @@ const App: React.FC = () => {
           Login With Github
         </button>
       )} */}
-      <Footer />
+        <Footer />
+      </RatingContextProvider>
     </div>
   );
   // ) : (

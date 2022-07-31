@@ -188,3 +188,14 @@ border-left: 4px solid #0C73EB;
 }
 
 /* ----------------------------------------------------- */
+
+.safe,.unsafe h4{
+  text-align: center !important;
+}
+
+.safe p{
+  color: green !important;
+}
+.unsafe p{
+  color: red !important;
+}

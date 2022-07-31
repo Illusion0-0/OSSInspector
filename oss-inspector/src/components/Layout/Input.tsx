@@ -2,7 +2,12 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { getUser } from '../../slices/user';
 
+
+import { RatingContext } from '../../contexts/RatingContext';
+import { useContext } from 'react';
+
 const Input: React.FC = () => {
+  const { setRepoName } = useContext(RatingContext);
   const dispatch = useDispatch();
   const [gUrl, setUrl] = React.useState('');
   // const [username, setUsername] = React.useState('');
@@ -35,7 +40,8 @@ const Input: React.FC = () => {
     e.preventDefault();
     const username = extractUsername(gUrl);
     const repoName = extractRepoName(gUrl);
-    console.log(username, repoName);
+    // console.log(username, repoName);
+    setRepoName(repoName);
     dispatch(getUser([username, repoName]));
     // setUrl('');
     // dispatch(getUser(repoName));

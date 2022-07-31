@@ -64,7 +64,9 @@ export interface UserState {
   rating: ResultObject[] | null;
   error: string | null;
   starred: Boolean;
-  loading?: Boolean;
+  repoScore: number;
+  loading?: Boolean; // ? means optional
+
 }
 
 export interface RootState {
@@ -87,6 +89,8 @@ export interface Rating {
   totalForks: number;
   repoName: string;
   repoCount: number;
+  repoIsSafe: boolean;
+  overAllScore: number;
   backlinkRating: number;
 }
 

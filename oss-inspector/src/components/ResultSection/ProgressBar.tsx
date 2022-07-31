@@ -38,7 +38,7 @@ const ProgressBar: React.FC<ProgressOptions> = ({ percentage = 0, title }) => {
           </span>
         </div>
       </div>
-      <h2 className="title">{title}</h2>
+      <h4 className="title">{title}</h4>
       <div className="info">
         <div>
           <RateIcon rate={0} /> 0-49
