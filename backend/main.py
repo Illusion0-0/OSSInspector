@@ -1,3 +1,4 @@
+from turtle import clone
 from flask import Flask, request
 import subprocess
 import os
@@ -11,6 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 results_dir = os.path.join(os.getcwd(), 'results')
+cloned_repo_dir = os.path.join(os.getcwd(), 'cloned_repos')
 
 
 @app.route("/test", methods=['POST'])
@@ -18,8 +20,8 @@ def test_repo():
     repo_url = request.values.get("repo_url")
     repo_name = repo_url.split("/")[-1].replace(".git", "")
     repo_result_path = f"{results_dir}/{repo_name}_res.json"
-    repo_path = os.path.join(os.getcwd(), repo_name)
-    if os.path.exists(f"./results/{repo_name}_res.json"):
+    repo_path = os.path.join(cloned_repo_dir, repo_name)
+    if os.path.exists(repo_result_path):
         return json.loads(open(repo_result_path).read())
     print(repo_url, repo_name)
     if not os.path.exists(repo_path):
@@ -37,4 +39,7 @@ if __name__ == "__main__":
     if not os.path.exists(results_dir):
         print("no file")
         os.mkdir(results_dir)
+    if not os.path.exists(cloned_repo_dir):
+        print("no cloned")
+        os.mkdir(cloned_repo_dir)
     app.run(debug=True)

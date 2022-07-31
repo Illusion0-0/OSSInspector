@@ -1,8 +1,8 @@
 {
   "errors": [],
-  "generated_at": "2022-07-31T17:57:34Z",
+  "generated_at": "2022-07-31T18:03:58Z",
   "metrics": {
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\__init__.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -15,7 +15,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\__init__.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -28,7 +28,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\admin.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\admin.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -41,7 +41,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\apps.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\apps.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -54,7 +54,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\migrations\\__init__.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\migrations\\__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -67,7 +67,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\models.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\models.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -80,7 +80,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\tests.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\tests.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -93,7 +93,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\urls.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\urls.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -106,7 +106,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\accounts\\views.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\accounts\\views.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -119,7 +119,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\__init__.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -132,7 +132,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\admin.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\admin.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -145,7 +145,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\apps.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\apps.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -158,7 +158,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\migrations\\0001_initial.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\migrations\\0001_initial.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -171,7 +171,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\migrations\\0002_alter_note_user.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\migrations\\0002_alter_note_user.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -184,7 +184,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\migrations\\0003_alter_notepages_content.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\migrations\\0003_alter_notepages_content.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -197,7 +197,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\migrations\\__init__.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\migrations\\__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -210,7 +210,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\models.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\models.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -223,7 +223,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\tests.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\tests.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -236,7 +236,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\urls.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\urls.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -249,7 +249,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\main\\views.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\main\\views.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -262,7 +262,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\manage.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\manage.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -275,7 +275,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\notes\\asgi.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\notes\\asgi.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -288,7 +288,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\notes\\settings.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\notes\\settings.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 1,
@@ -301,7 +301,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\notes\\urls.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\notes\\urls.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -314,7 +314,7 @@
       "nosec": 0,
       "skipped_tests": 0
     },
-    "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\notes\\wsgi.py": {
+    "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\notes\\wsgi.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -345,7 +345,7 @@
     {
       "code": "40 # SECURITY WARNING: keep the secret key used in production secret!\n41 SECRET_KEY = \"django-insecure-pj)dwdn$)olnidti7^kkx80)-zfvtzpm4m=^^uz1dcpi_&fn@!\"\n42 \n43 # SECURITY WARNING: don't run with debug turned on in production!\n44 DEBUG = True\n",
       "col_offset": 13,
-      "filename": "E:\\Dev\\Python\\OSSInspector\\backend\\bruteForce_web01\\notes\\settings.py",
+      "filename": "E:\\Dev\\Python\\OSSInspector\\backend\\cloned_repos\\bruteForce_web01\\notes\\settings.py",
       "issue_confidence": "MEDIUM",
       "issue_cwe": {
         "id": 259,
