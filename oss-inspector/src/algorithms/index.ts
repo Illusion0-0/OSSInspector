@@ -23,14 +23,16 @@ export class UserRating {
     totalForks: 0,
     totalStars: 0,
     repoCount: 0,
+    repoName: '',
     backlinkRating: 0,
   };
 
   // Get all user data & repositories
-  constructor(user: User, repos: Repository[], isStarred: Boolean) {
+  constructor(user: User, repos: Repository[], isStarred: Boolean, repoName: string) {
     const TOTAL_STARS = repos.map((r) => r.stargazers_count).reduce((a, b) => a + b);
     const TOTAL_FORKS = repos.map((r) => r.forks_count).reduce((a, b) => a + b);
 
+    this.rating.repoName = repoName;
     this.user = user;
     this.repos = repos.filter((r) => !r.fork);
     this.isStarred = isStarred;
@@ -69,7 +71,6 @@ export class UserRating {
     console.log(this.repos);
     const TOTAL_STARS = this.repos.map((r) => r.stargazers_count).reduce((a, b) => a + b);
     const TOTAL_FORKS = this.repos.map((r) => r.forks_count).reduce((a, b) => a + b);
-
     const rate = (TOTAL_STARS + TOTAL_FORKS * 1.2) / this.repos.length;
     const res = parseInt((rate * 16).toFixed(0), 10);
     this.rating.repoPopularity = res >= 100 ? 100 : res;
@@ -81,14 +82,19 @@ export class UserRating {
   rateRepo(repoName: string) {
     const repo = this.repos.find((r) => r.name === repoName);
     if (repo) {
+    console.log(repo.stargazers_count + repo.forks_count);
       const rate = repo.stargazers_count + repo.forks_count*1.2;
 
       const res = parseInt((rate * 16).toFixed(0), 10);
       this.rating.givenRepoPopularity = res >= 100 ? 100 : res;
 
     }
-    this.rating.givenRepoPopularity = 0;
+    
+    else this.rating.givenRepoPopularity = 0;
+
+    console.log(this.rating.repoName, this.rating.givenRepoPopularity);
   }
+
 
   //check if repo is safe or not using the following criteria in some ratio:
   //1. if the repo is not a fork
@@ -138,6 +144,7 @@ export class UserRating {
     this.ratePopularity();
     this.rateRepoDescription();
     this.rateRepoPopularity();
+    this.rateRepo(this.rating.repoName);
     this.rateWebpage();
     this.rateBacklinks();
 

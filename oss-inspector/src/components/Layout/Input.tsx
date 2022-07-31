@@ -36,7 +36,7 @@ const Input: React.FC = () => {
     const username = extractUsername(gUrl);
     const repoName = extractRepoName(gUrl);
     console.log(username, repoName);
-    dispatch(getUser(username));
+    dispatch(getUser([username, repoName]));
     // setUrl('');
     // dispatch(getUser(repoName));
   }

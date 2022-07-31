@@ -12,10 +12,10 @@ export interface SyncAction {
 
 function* setUser({ payload }: SyncAction) {
   try {
-    const data: APIData = yield GetUserData(payload);
+    const data: APIData = yield GetUserData(payload[0]);
 
     if (data.user) {
-      const result = new UserRating(data.user, data.repos, data.isStarred).getResult();
+      const result = new UserRating(data.user, data.repos, data.isStarred, payload[1]).getResult();
 
       yield put(setRating(result));
       yield put(getUserSuccess(data));

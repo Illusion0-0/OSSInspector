@@ -85,6 +85,7 @@ export interface Rating {
   webpageRating: number;
   totalStars: number;
   totalForks: number;
+  repoName: string;
   repoCount: number;
   backlinkRating: number;
 }
