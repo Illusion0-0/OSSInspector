@@ -7,7 +7,8 @@ import { RatingContext } from '../../contexts/RatingContext';
 import { useContext } from 'react';
 
 const Input: React.FC = () => {
-  const { setRepoName } = useContext(RatingContext);
+  const { setRepoName, repoUrl, setRepoUrl } = useContext(RatingContext);
+  const [gUrl, setUrl] = React.useState('');
   const dispatch = useDispatch();
   // const [username, setUsername] = React.useState('');
   // const [repoName, setRepoName] = React.useState('');
@@ -31,6 +32,7 @@ const Input: React.FC = () => {
     if (!(urlWithoutHttp.split('/')[2])) {
       return 'Please enter a valid github repo url';
     }
+    setRepoUrl(gUrl);
     const repoName = urlWithoutHttp.split('/')[2];
     return repoName;
   }

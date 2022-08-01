@@ -1,5 +1,5 @@
 from turtle import clone
-from flask import Flask, request
+from flask import Flask, request,jsonify
 import subprocess
 import os
 from git import Repo
@@ -15,14 +15,14 @@ results_dir = os.path.join(os.getcwd(), 'results')
 cloned_repo_dir = os.path.join(os.getcwd(), 'cloned_repos')
 
 
-@app.route("/test", methods=['POST'])
+@app.route("/test")
 def test_repo():
-    repo_url = request.values.get("repo_url")
+    repo_url = request.values.get("repo_url") 
     repo_name = repo_url.split("/")[-1].replace(".git", "")
-    repo_result_path = f"{results_dir}/{repo_name}_res.json"
+    repo_result_path = os.path.join(results_dir, f"{repo_name}_res.json")
     repo_path = os.path.join(cloned_repo_dir, repo_name)
     if os.path.exists(repo_result_path):
-        return json.loads(open(repo_result_path).read())
+        return jsonify(json.loads(open(repo_result_path).read())["results"])
     print(repo_url, repo_name)
     if not os.path.exists(repo_path):
         Repo.clone_from(repo_url, repo_path)
@@ -32,7 +32,7 @@ def test_repo():
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
     process.wait()
     #shutil.rmtree(repo_path, ignore_errors=False)
-    return json.loads(open(repo_result_path).read())
+    return jsonify(json.loads(open(repo_result_path).read())["results"])
 
 
 if __name__ == "__main__":

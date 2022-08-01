@@ -10,7 +10,8 @@ export const RatingContextProvider = ({ children }) => {
     const [isRepoSafe, setIsRepoSafe] = useState(false);
     const [repoScore, setRepoScore] = useState(0);
     const [repoName, setRepoName] = useState('');
-    return <RatingContext.Provider value={{ isRepoSafe, setIsRepoSafe, overAllScore, setOverAllScore, repoScore, repoName, setRepoName }}>{children}</RatingContext.Provider>;
+    const [repoUrl, setRepoUrl] = useState('');
+    return <RatingContext.Provider value={{ isRepoSafe, setIsRepoSafe, overAllScore, setOverAllScore, repoScore, repoName, setRepoName, repoUrl, setRepoUrl }}>{children}</RatingContext.Provider>;
 };
 
 // export default RatingContext;

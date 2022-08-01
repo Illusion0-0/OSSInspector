@@ -7,6 +7,7 @@ export const initialState: UserState = {
   repos: null,
   rating: null,
   error: null,
+  repoScore: 0,
   starred: false,
   loading: false,
 };

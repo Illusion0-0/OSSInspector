@@ -199,3 +199,24 @@ border-left: 4px solid #0C73EB;
 .unsafe p{
   color: red !important;
 }
+
+.vulnerability-results {
+  /* width: 80%; */
+  margin : 0 auto;
+}
+
+.vulnerability-results pre{
+  font-size: .9rem;
+  border : 1px solid #555;
+  background-color: #444;
+  padding : 4px;
+}
+.vulnerability{
+  padding: 10px 0;
+}
+
+.vulnerability-results p {
+  font-size: 1rem !important;
+  font-weight: 400;
+  margin-bottom: 5px;
+}

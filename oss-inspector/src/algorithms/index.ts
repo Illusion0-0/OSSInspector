@@ -1,7 +1,6 @@
 import { Rating, Repository, ResultObject, User } from '../types';
 import finalizeResult from './finalizeResult';
-import { RatingContext } from '../contexts/RatingContext';
-import { useContext } from 'react';
+
 export class UserRating {
   // User Data & User Repositories (without forks)
   user: User;

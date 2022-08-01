@@ -6,7 +6,7 @@ import ProgressBar from './ProgressBar';
 import LabResults from './LabResults';
 import Opportunuties from './Opportunities';
 import Diagnostics from './Diagnostics';
-//import Vulnerabilities from './Vulnerabilities';
+import Vulnerabilities from './Vulnerabilities';
 
 
 import { RatingContext } from '../../contexts/RatingContext';
@@ -90,8 +90,8 @@ const ResultsWrapper: React.FC = () => {
       <div className="wrapper">
         <LabResults />
         <Opportunuties />
-        {/* <Vulnerabilities/> */}
         <Diagnostics />
+        <Vulnerabilities />
       </div>
     </div>
   );

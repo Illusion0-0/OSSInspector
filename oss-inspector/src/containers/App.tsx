@@ -17,20 +17,12 @@ import '../styles/index.scss';
 const App: React.FC = () => {
   return (
     <div className="App">
-<<<<<<< HEAD
       <RatingContextProvider>
         <Header />
         {/* <Inspect /> */}
         <SearchUser />
         <Results />
         {/* {user ? (
-=======
-      <Header />
-      {/* <Inspect /> */}
-      <SearchUser />
-      <Results  />
-      {/* {user ? (
->>>>>>> 3b443651d86d430d65a51eaf8f90f277b2cbf1bf
         <div className="content">
           <ProfileCard user={user} />
           <Repos user={user} />
